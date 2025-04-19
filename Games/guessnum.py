@@ -2,20 +2,21 @@ import random
 def guessnum(n):
     need_to_guess=random.randint(1,n)
     while True:
-        num=int(input('numarul de ghicit : '))
+        num=int(input('The number:  '))
         if num==need_to_guess:
-            print('Ai ghicit numarul corect')
+            print('You guessed correctly')
             break
 
         elif num>need_to_guess:
-            print('Prea mare , numarul este mai mic ')
+            print('To big, the number is smaller ')
 
         else:
-            print('Prea mic , numarul este mai mare')
+            print('To small , the number is bigger')
 
 
 
 def main():
-    print(guessnum(100))
+    n=random.randint(1,100)
+    print(guessnum(n))
 if __name__=='__main__':
     main()
