@@ -1,8 +1,11 @@
+import random
 def hangman():
     print("Welcome to Hangman!")
     print("You have 7 incorrect guesses to get out of the game.")
     print("Good luck!")
-    word = "procesor"
+    with open('words.txt','r') as f:
+        cuvinte=f.read().splitlines()
+    word=random.choice(cuvinte)
     progress=['_']*len(word)
     print(f"The word is: {' '.join(progress)}")
     used_letters = set()
