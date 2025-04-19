@@ -23,7 +23,7 @@ def game():
     comp=computer()
 
     if me==comp:
-        #
+
          print ('draw')
     elif (me == 'rock' and comp =='scissors') or \
             (me == 'scissors' and comp =='paper') or \
@@ -31,7 +31,7 @@ def game():
 
          print( 'win')
     else:
-       # print( 'lose')
+
          print('lose')
 
 
